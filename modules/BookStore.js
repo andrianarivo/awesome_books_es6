@@ -1,32 +1,25 @@
-export default class {
-  constructor() {
-    this.booksArray = [];
-  }
+import { getBooks, saveBooks } from './Storage.js';
 
-  // Get data from localstorage
-  getData() {
-    this.booksArray = JSON.parse(localStorage.getItem('books')) || [];
+export default class BookStore {
+  constructor() {
+    this.getData();
   }
 
   // Add book to booksArray
-  addBook(title, author) {
-    this.booksArray.push({
-      id: Math.floor(Math.random() * 1000),
-      title,
-      author,
-    });
+  addBook(book) {
+    book.id = this.booksArray.length + 1;
+    this.booksArray.push(book);
+    saveBooks(this.booksArray);
+  }
+
+  getData() {
+    this.booksArray = getBooks();
   }
 
   // Remove book from booksArray
   remove(id) {
-    this.booksArray = this.booksArray.filter(
-      (bookItem) => Number(bookItem.id) !== Number(id),
-    );
-  }
-
-  // Set data to localstorage
-  saveData() {
-    localStorage.setItem('books', JSON.stringify(this.booksArray));
+    this.booksArray = this.booksArray.filter((bookItem) => Number(bookItem.id) !== Number(id));
+    saveBooks(this.booksArray);
   }
 
   // Show books in DOM
