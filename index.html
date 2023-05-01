@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" src="./index.css" />
     <title>Awesome Books</title>
   </head>
   <body>
@@ -21,13 +22,7 @@
           <a class="navbar-brand" href="#">Awesome Books</a>
           <ul class="navbar-nav w-25 flex-row justify-content-between">
             <li class="nav-item">
-              <a
-                class="nav-link active text-primary"
-                id="list"
-                aria-current="page"
-                href="#"
-                >List</a
-              >
+              <a class="nav-link active text-primary" id="list" aria-current="page" href="#">List</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" id="add-new" href="#">Add new</a>
@@ -40,16 +35,12 @@
       </nav>
     </header>
     <!-- Date -->
-    <time
-      class="fw-bold text-right w-100 d-flex justify-content-end pe-5 pt-2"
-    ></time>
+    <time class="fw-bold text-right w-100 d-flex justify-content-end pe-5 pt-2"></time>
     <!-- Main -->
     <main class="py-5"></main>
 
     <!-- Footer -->
-    <footer
-      class="bg-light position-fixed fixed-bottom d-flex justify-content-around align-item-center"
-    >
+    <footer class="bg-light position-fixed fixed-bottom d-flex justify-content-around align-item-center">
       <p>&copy;Copyright</p>
     </footer>
     <!-- Bootstrap CDN -->
@@ -58,8 +49,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="js/date.js"></script>
-    <!-- <script src="js/script-class.js"></script> -->
-    <script src="js/spa.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

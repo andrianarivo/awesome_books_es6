@@ -123,16 +123,6 @@ You can deploy this project by pushing to your own `github page`
 - GitHub: [@andrianarivo](https://github.com/andrianarivo)
 - LinkedIn: [David Andrianarivo](https://www.linkedin.com/in/david-andrianarivo-3692101b6/)
 
-👤 **Hafiz**
-
-- GitHub: [@HafizMassamTabraizKhan](https://github.com/HafizMassamTabraizKhan)
-- LinkedIn: [Hafiz Massam Tabraiz Khan](https://linkedin.com/in/linkedinhandle)
-
-👤 **Amin**
-
-- GitHub: [@Amin](https://github.com/M-AminAlizadeh)
-- LinkedIn: [Mohammad Amin Alizadeh](https://www.linkedin.com/in/m-amin-alizadeh-60a20b1b0/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
