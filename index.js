@@ -1,5 +1,8 @@
 import BookStore from './modules/BookStore.js';
-import { mainContainer, navLinks } from './modules/DOMLoader.js';
+import { mainContainer, navLinks, timeContainer } from './modules/DOMLoader.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+
+timeContainer.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 
 const bookStore = new BookStore();
 
