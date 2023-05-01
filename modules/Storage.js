@@ -1,6 +1,4 @@
-const getBooks = () => {
-  return JSON.parse(localStorage.getItem('books')) || [];
-};
+const getBooks = () => JSON.parse(localStorage.getItem('books')) || [];
 
 const saveBooks = (booksArray) => {
   localStorage.setItem('books', JSON.stringify(booksArray));
